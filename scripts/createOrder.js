@@ -15,12 +15,10 @@ casper.then(function() {
 
 casper.thenOpen('http://phantomjs.org', function() {
     output.secondPage = this.getTitle();
-    //this.echo('Second Page: ' + this.getTitle());
 });
 
 casper.then(function() {
     system.stdout.write(JSON.stringify(output, null, '\t'));
-    //console.log(output);
 });
 
 casper.run();

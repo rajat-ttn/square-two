@@ -15,7 +15,7 @@ module.exports = config => {
     orderController.createOrder = (req, res) => {
         const orderParams = {
             testing:'hola',
-            name:'Rajat'
+            name:'world'
         };
 
         casperRunner.run(orderParams, (err, overallOutput)=>{
